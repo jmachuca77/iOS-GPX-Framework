@@ -69,7 +69,7 @@
         [attribute appendFormat:@" author=\"%@\"", _author];
     }
     
-    [gpx appendString:[NSString stringWithFormat:@"%@%<%@%@>\r\n"
+    [gpx appendString:[NSString stringWithFormat:@"%@<%@%@>\r\n"
                        , [self indentForIndentationLevel:indentationLevel]
                        , [[self class] tagName]
                        , attribute

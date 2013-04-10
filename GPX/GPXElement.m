@@ -188,7 +188,7 @@
 
 - (void)addOpenTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel
 {
-    [gpx appendString:[NSString stringWithFormat:@"%@%<%@>\r\n"
+    [gpx appendString:[NSString stringWithFormat:@"%@<%@>\r\n"
                        , [self indentForIndentationLevel:indentationLevel]
                        , [[self class] tagName]
                        ]
@@ -202,7 +202,7 @@
 
 - (void)addCloseTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel
 {
-    [gpx appendString:[NSString stringWithFormat:@"%@%</%@>\r\n"
+    [gpx appendString:[NSString stringWithFormat:@"%@</%@>\r\n"
                        , [self indentForIndentationLevel:indentationLevel]
                        , [[self class] tagName]
                        ]

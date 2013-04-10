@@ -229,7 +229,7 @@
     }
     
     [gpx appendString:@"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n"];
-    [gpx appendString:[NSString stringWithFormat:@"%@%<%@%@>\r\n"
+    [gpx appendString:[NSString stringWithFormat:@"%@<%@%@>\r\n"
                        , [self indentForIndentationLevel:indentationLevel]
                        , [[self class] tagName]
                        , attribute
