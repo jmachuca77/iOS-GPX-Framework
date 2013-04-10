@@ -13,4 +13,8 @@
  */
 @interface GPXExtensions : GPXElement
 
+@property (nonatomic, assign) NSNumber *heartRate;
+@property (nonatomic, assign) NSNumber *cadence;
+@property (nonatomic, assign) NSNumber *distance;
+
 @end
